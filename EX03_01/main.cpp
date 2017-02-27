@@ -21,6 +21,11 @@ int main()
 			j = 1;
 
 		}
+		catch (range_error &m)
+		{
+			cerr << "Exception: You supplied an invalid argument for read_int!\n";
+			j = 0;
+		}
 		catch (invalid_argument &e)
 		{
 			cerr << "Exception: You supplied an invalid argument for read_int!\n";
